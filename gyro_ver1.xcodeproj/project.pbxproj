@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03499AEB238BA03B005516CF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03499AEA238BA03B005516CF /* libc++.tbd */; };
+		03499AED238BA1FD005516CF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03499AEC238BA1FD005516CF /* ExternalAccessory.framework */; };
+		03499AEF238BA306005516CF /* AsReaderDockSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03499AEE238BA306005516CF /* AsReaderDockSDK.framework */; };
 		036FCBBE2386A10100C239CF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FCBBD2386A10100C239CF /* CoreMotion.framework */; };
 		03835C862341F2C200F3F530 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03835C852341F2C200F3F530 /* Accelerate.framework */; };
 		03ECED2B2328B5BB000161E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECED2A2328B5BB000161E6 /* AppDelegate.swift */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03499AE9238B9E4C005516CF /* Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		03499AEA238BA03B005516CF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		03499AEC238BA1FD005516CF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		03499AEE238BA306005516CF /* AsReaderDockSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsReaderDockSDK.framework; path = gyro_ver1/AsReaderDockSDK.framework; sourceTree = "<group>"; };
 		036FCBBD2386A10100C239CF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		03835C852341F2C200F3F530 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		03ECED272328B5BB000161E6 /* gyro_ver1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gyro_ver1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03499AEF238BA306005516CF /* AsReaderDockSDK.framework in Frameworks */,
+				03499AED238BA1FD005516CF /* ExternalAccessory.framework in Frameworks */,
+				03499AEB238BA03B005516CF /* libc++.tbd in Frameworks */,
 				036FCBBE2386A10100C239CF /* CoreMotion.framework in Frameworks */,
 				03835C862341F2C200F3F530 /* Accelerate.framework in Frameworks */,
 			);
@@ -85,6 +95,9 @@
 		03835C842341F2C200F3F530 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03499AEE238BA306005516CF /* AsReaderDockSDK.framework */,
+				03499AEC238BA1FD005516CF /* ExternalAccessory.framework */,
+				03499AEA238BA03B005516CF /* libc++.tbd */,
 				036FCBBD2386A10100C239CF /* CoreMotion.framework */,
 				03835C852341F2C200F3F530 /* Accelerate.framework */,
 			);
@@ -115,6 +128,7 @@
 		03ECED292328B5BB000161E6 /* gyro_ver1 */ = {
 			isa = PBXGroup;
 			children = (
+				03499AE9238B9E4C005516CF /* Sample-Bridging-Header.h */,
 				03ECED2A2328B5BB000161E6 /* AppDelegate.swift */,
 				03ECED2C2328B5BB000161E6 /* FirstViewController.swift */,
 				03ECED2E2328B5BB000161E6 /* SecondViewController.swift */,
@@ -454,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QU423J56R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gyro_ver1",
+				);
 				INFOPLIST_FILE = gyro_ver1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,6 +490,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QU423J56R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gyro_ver1",
+				);
 				INFOPLIST_FILE = gyro_ver1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
