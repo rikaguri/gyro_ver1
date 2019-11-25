@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036FCBBE2386A10100C239CF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FCBBD2386A10100C239CF /* CoreMotion.framework */; };
+		03835C862341F2C200F3F530 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03835C852341F2C200F3F530 /* Accelerate.framework */; };
 		03ECED2B2328B5BB000161E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECED2A2328B5BB000161E6 /* AppDelegate.swift */; };
 		03ECED2D2328B5BB000161E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECED2C2328B5BB000161E6 /* FirstViewController.swift */; };
 		03ECED2F2328B5BB000161E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECED2E2328B5BB000161E6 /* SecondViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036FCBBD2386A10100C239CF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		03835C852341F2C200F3F530 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		03ECED272328B5BB000161E6 /* gyro_ver1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gyro_ver1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ECED2A2328B5BB000161E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03ECED2C2328B5BB000161E6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036FCBBE2386A10100C239CF /* CoreMotion.framework in Frameworks */,
+				03835C862341F2C200F3F530 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03835C842341F2C200F3F530 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				036FCBBD2386A10100C239CF /* CoreMotion.framework */,
+				03835C852341F2C200F3F530 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		03ECED1E2328B5BB000161E6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,7 @@
 				03ECED402328B5BE000161E6 /* gyro_ver1Tests */,
 				03ECED4B2328B5BE000161E6 /* gyro_ver1UITests */,
 				03ECED282328B5BB000161E6 /* Products */,
+				03835C842341F2C200F3F530 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,7 +386,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
